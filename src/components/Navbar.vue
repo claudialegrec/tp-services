@@ -48,11 +48,5 @@
 <script>
     export default {
         name: "navbar",
-        data() {
-
-        },
-        methods: {
-
-        }
     }
 </script>
