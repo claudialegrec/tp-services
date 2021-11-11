@@ -1,11 +1,11 @@
 <template>
     <div>
-        <p>Aquí el usuario podrá consultar sus citas</p>
+        <p>Este es el SignUp, bienvenido</p>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Schedule',
+    name: 'SignUp',
 }
 </script>

@@ -10,7 +10,7 @@
     <ul class="navbar-nav mr-auto">
       
       <li class="nav-item active">
-        <a class="nav-link" href="#">Inicio</a>
+        <a href="/" class="nav-link" @click="changeInicio()">Inicio</a>
       </li>
 
       <li class="nav-item dropdown">
@@ -18,24 +18,24 @@
           Usuario
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Mi información</a>
-          <a class="dropdown-item" href="#">Mis citas</a>
+          <a href="InfoUser" class="dropdown-item">Mi información</a>
+          <a href="Schedule" class="dropdown-item">Mis citas</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Cerrar sesión</a>
+          <a class="dropdown-item" href="/">Cerrar sesión</a>
         </div>
       </li>
     </ul>
 
     <ul class="nav navbar-nav navbar-right">
       <li>
-        <a class="nav-link">
+        <a href="SignUp" class="nav-link">
           <font-awesome-icon :icon="['fa', 'user']" style="margin-right:5px" />
           Sign Up
         </a>
       </li>
       <li class="nav-link"><a>|</a></li>
       <li>
-        <a class="nav-link" style="margin-right:40px">
+        <a href="LogIn" class="nav-link" style="margin-right:40px">
           <font-awesome-icon :icon="['fa', 'sign-in-alt']" style="margin-right:5px" />
           Login
         </a>
@@ -47,6 +47,12 @@
 
 <script>
     export default {
-        name: "navbar"
+        name: "navbar",
+        data() {
+
+        },
+        methods: {
+
+        }
     }
 </script>
