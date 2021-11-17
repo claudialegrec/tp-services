@@ -1,6 +1,6 @@
 <template>
   <div style="padding:30px">
-    <h1 style="margin-bottom:30px">Aqui se muestran los servicios</h1>
+    <h1 style="margin-bottom:30px">Información de servicios</h1>
     <div class="row">
       <div class="col">
         <servicelist/>
@@ -9,7 +9,7 @@
 
     <div class="row" style="margin-top:20px">
       <div class="col d-flex justify-content-end">
-        <button class="btn btn-primary">Editar servicios</button>
+        <button class="btn btn-primary">Añadir servicio</button>
       </div>
     </div>
   </div>
