@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-danger" style="padding:30px">
+  <div style="padding:30px">
     <h1 style="margin-bottom:30px">Aqui se muestran los servicios</h1>
     <div class="row">
       <div class="col">
