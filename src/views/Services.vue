@@ -17,11 +17,18 @@
 
 <script>
 import servicelist from "../components/ServiceList"
+import {mapState, mapMutations} from 'vuex'
 
 export default {
     name: 'Services',
     components: {
       servicelist,
+    },
+    computed: {
+      ...mapState(['listas'])
+    },
+    methods: {
+      ...mapMutations(['addList'])
     }
 }
 </script>
