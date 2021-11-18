@@ -3,7 +3,9 @@
     <h1 style="margin-bottom:30px">Información de servicios</h1>
     <div class="row">
       <div class="col">
+        <!-- v-for="(list, key) in listas" :key="key" -->
         <servicelist/>
+        <!-- :title="list.title" :description="list.description" :index="key" -->
       </div>
     </div>
 
@@ -17,7 +19,7 @@
 
 <script>
 import servicelist from "../components/ServiceList"
-import {mapState, mapMutations} from 'vuex'
+import {mapState} from 'vuex'
 
 export default {
     name: 'Services',
@@ -26,9 +28,6 @@ export default {
     },
     computed: {
       ...mapState(['listas'])
-    },
-    methods: {
-      ...mapMutations(['addList'])
     }
 }
 </script>
