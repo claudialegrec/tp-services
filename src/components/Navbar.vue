@@ -10,7 +10,7 @@
     <ul class="navbar-nav mr-auto">
       
       <li class="nav-item active">
-        <a href="/" class="nav-link" @click="changeInicio()">Inicio</a>
+        <a href="/" class="nav-link">Inicio</a>
       </li>
 
       <li class="nav-item dropdown">

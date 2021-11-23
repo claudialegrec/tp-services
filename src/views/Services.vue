@@ -2,10 +2,8 @@
   <div style="padding:30px">
     <h1 style="margin-bottom:30px">Información de servicios</h1>
     <div class="row">
-      <div class="col">
-        <!-- v-for="(list, key) in listas" :key="key" -->
-        <servicelist/>
-        <!-- :title="list.title" :description="list.description" :index="key" -->
+      <div class="col" v-for="(lista, key) in getListas" :key="key">
+        <servicelist :title="lista.title" :description="lista.description"/>
       </div>
     </div>
 
@@ -19,7 +17,7 @@
 
 <script>
 import servicelist from "../components/ServiceList"
-import {mapState} from 'vuex'
+import {mapGetters} from 'vuex'
 
 export default {
     name: 'Services',
@@ -27,7 +25,16 @@ export default {
       servicelist,
     },
     computed: {
-      ...mapState(['listas'])
+      ...mapGetters('Services', ["getListas"])
+    },
+    data() {
+      return {
+      }
+    },
+    mounted() {
+    },
+    methods: {
+
     }
 }
 </script>

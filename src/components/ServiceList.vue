@@ -5,7 +5,7 @@
       <p class="card-text">{{ description }}</p>
       <div class="row">
         <div class="col d-flex justify-content-end">
-          <a href="#" class="btn btn-primary">Agendar cita</a>
+          <a href="#" class="btn btn-primary" @click="agendarCita()">Agendar cita</a>
         </div>
       </div>
     </div>
@@ -13,17 +13,28 @@
 </template>
 
 <script>
-import {mapState} from 'vuex'
+import {mapGetters} from 'vuex'
 
 export default {
     name: 'ServiceList',
     props: {
       title: String,
       description: String,
-      index: Number
     },
     computed: {
-      ...mapState(['listas'])
+      ...mapGetters('Services', ["getListas"])
+    },
+    mounted() {
+      console.log('%c⧭', 'color: #006dcc', this.getListas)
+    },
+    data() {
+      return {
+      }
+    },
+    methods: {
+      agendarCita() {
+        this.$router.replace({name: 'AgendarCita'})
+      },
     }
 }
 </script>

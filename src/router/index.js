@@ -5,6 +5,7 @@ import LogIn from '../views/Login.vue'
 import SignUp from '../views/Signup.vue'
 import InfoUser from '../views/InfoUser.vue'
 import Schedule from '../views/Schedule.vue'
+import AgendarCita from '../views/AgendarCita.vue'
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,11 @@ const routes = [
     path: '/Schedule',
     name: 'Schedule',
     component: Schedule
+  },
+  {
+    path: '/AgendarCita',
+    name: 'AgendarCita',
+    component: AgendarCita
   },
 ]
 
