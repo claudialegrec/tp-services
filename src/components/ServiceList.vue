@@ -20,12 +20,12 @@ export default {
     props: {
       title: String,
       description: String,
+      index: Number
     },
     computed: {
       ...mapGetters('Services', ["getListas"])
     },
     mounted() {
-      console.log('%c⧭', 'color: #006dcc', this.getListas)
     },
     data() {
       return {

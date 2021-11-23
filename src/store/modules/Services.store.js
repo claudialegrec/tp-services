@@ -25,6 +25,13 @@ const actions = {
 };
 
 const mutations = {
+  addService(state) {
+    var json = {
+      title: "",
+      description: "",
+    }
+    state.listas.push(json)
+  },
 
 };
 
