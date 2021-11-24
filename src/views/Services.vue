@@ -9,7 +9,7 @@
 
     <div class="row" style="margin-top:20px">
       <div class="col d-flex justify-content-end">
-        <button class="btn btn-primary" @click="addService(index)">Añadir servicio</button>
+        <button class="btn btn-primary" @click="addService">Añadir servicio</button>
       </div>
     </div>
   </div>

@@ -1,3 +1,4 @@
+// import axios from 'axios'
 
 const state = {
   listas:[
@@ -21,18 +22,13 @@ const getters = {
 };
 
 const actions = {
-
+  addServiceList({ commit }, json) {
+    commit('addService', json)
+  }
 };
 
 const mutations = {
-  addService(state) {
-    var json = {
-      title: "",
-      description: "",
-    }
-    state.listas.push(json)
-  },
-
+  addService:(state, service) => state.servicio = service
 };
 
 export default {
