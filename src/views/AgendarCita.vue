@@ -8,6 +8,11 @@
 
     <div class="row d-flex">
       <div class="col-sm-2" style="padding:20px; margin-left:20px">
+        <label>Servicio:</label>
+        <input type="text" class="form-control" placeholder="Nombre">
+      </div>
+
+      <div class="col-sm-2" style="padding:20px; margin-left:20px">
         <label>Nombre(s):</label>
         <input type="text" class="form-control" placeholder="Nombre">
       </div>
